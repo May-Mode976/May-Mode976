@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>May'Mode976 — Mode à Mayotte</title>
+  <meta name="description" content="Achetez et vendez vêtements femme, homme, enfant et accessoires partout à Mayotte.">
+  <meta name="theme-color" content="#1b1033">
+  <!-- Installation sur iPhone / iPad (écran d'accueil) -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="May'Mode">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <link rel="icon" href="icons/icon-192.png">
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a href="#/" class="logo">MAY'MODE<span>976</span></a>
+    <a href="#/compte" class="topbar-link" id="topbar-compte">Connexion</a>
+  </header>
+
+  <main id="app" aria-live="polite">
+    <p class="chargement">Chargement…</p>
+  </main>
+
+  <nav class="tabbar" aria-label="Navigation principale">
+    <a href="#/" data-tab="accueil"><span class="ic">⌂</span>Accueil</a>
+    <a href="#/vendre" data-tab="vendre"><span class="ic">＋</span>Vendre</a>
+    <a href="#/messages" data-tab="messages"><span class="ic">✉</span>Messages<b id="badge-msg" hidden></b></a>
+    <a href="#/compte" data-tab="compte"><span class="ic">☺</span>Compte</a>
+  </nav>
+
+  <div id="toast" role="status" hidden></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
